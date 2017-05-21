@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>易码收银</title>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <style>
+
+
+    </style>
+</head>
+<body style="background-color: #E9F7FF;margin: 0px">
+<div id="pay">
+
+</div>
+
+<script type="text/babel">
+    var HelloMessage = React.createClass({
+        getInitialState:function () {
+          return {isShow:true,money:"",name:"天天饭店",image:"../src/timg.jpeg",isEnabled:false}
+        },
+        componentDidMount:function () {
+            this.timerFire()
+        },
+        timerFire:function () {
+            if (this.timer){
+            }else{
+                var isShow = false
+                let self = this
+                this.timer = setInterval(function () {
+                    isShow = !isShow
+                    self.hideOrShowLine(isShow)
+                },500)
+            }
+        },
+         hideOrShowLine:function (isShow) {
+             $(".line").css("background-color",isShow ? '#1A81C8' : 'white');
+         }
+        ,
+        handleClickHideKeyboard: function () {
+            $(".keyboard").animate({
+                bottom:'-280px'
+            });
+        },
+        showKeyboard:function () {
+            $(".keyboard").animate({
+                bottom:'0px'
+            });
+        },
+        handleClickDelete:function (event) {
+            var money = this.state.money
+            if (money.length > 0){
+                money = money.substr(0,money.length - 1)
+                var isEnabled = false
+
+                this.setState({
+                    money:money,
+                    isEnabled: money != 0
+
+                })
+            }
+            if (money.length == 0){
+                this.timerFire()
+            }
+
+
+        }
+        ,
+
+        handleClickNum:function (value) {
+            var money = this.state.money
+            this.hideOrShowLine(false)
+            clearInterval(this.timer)
+            this.timer = null
+            let index = money.indexOf(".")
+            if  (index >= 0 && value == "."){
+                return
+            }else if (money.length == 1 && money == "0" ){
+                if (value == "."){
+                    money += "."
+                }else{
+                    money = value
+                }
+            }else if (money.length == 0){
+                if (value == "."){
+                    money = "0."
+                }else{
+                    money = value
+                }
+            }else {
+                money += value
+            }
+            var isEnabled = false
+
+            this.setState({
+                money:money,
+                isEnabled:money != 0
+            })
+
+        },
+        handleClickPay:function () {
+            if (this.state.isEnabled){
+
+            }
+        }
+        ,
+        render: function() {
+            var keys = ["1","2","3","4","5","6","7","8","9","../src/wellpay.png","0","."];
+            let self = this
+            return <div style={style.body}>
+
+               <div style={style.top}>
+                  <div style={style.top.div}>
+                      <img  src={this.state.image} style={style.image} />
+                      <p  style={style.top.div.name} >{this.state.name}</p>
+                  </div>
+
+                   <div style={style.top.filed} onClick={this.showKeyboard.bind(this)}>
+                       <p style={style.top.filed.pl}>请输入金额</p>
+                       <div style={style.top.filed.right}>
+                           <div className="line" style={{backgroundColor:'#1A81C8',width:2,marginTop:5,marginLeft:3,height:20}}></div>
+                           <p style={style.top.filed.right.p}>{this.state.money}</p>
+                           <p style={style.top.filed.right.p}>¥</p>
+                       </div>
+                   </div>
+               </div>
+
+                <div className="keyboard" style={style.bottom}>
+                    <div style={{fontSize:15,color:'#D7D7D7',marginBottom:15}}>由容易付提供服务支持</div>
+                    <div style={style.bottom.keyboard}>
+                        <div style={style.bottom.keyboard.left} >
+                            {
+
+                                keys.map(function (value,index) {
+                                    if (value.length > 1){
+                                        return <button  style={style.bottom.keyboard.button}  onClick={self.handleClickHideKeyboard.bind(self)}>
+                                            <img style={{width:'30',margin:'auto'}} src={value}/>
+                                        </button>
+                                    }else{
+                                        return <button style={style.bottom.keyboard.button} id={index} onClick={self.handleClickNum.bind(self,value)}><p style={{width:'100%',height:"100%",margin:0}}>{value}</p></button>
+                                    }
+                                })
+                            }
+                        </div>
+                        <div style={style.bottom.keyboard.right}>
+                            <button style={{width:'100%',height:60,border:'0.5px solid #D7D7D7',backgroundColor:'#fff'}}  onClick={this.handleClickDelete.bind(this)}><img style={{width:'30'}} src="../src/delete.png"/></button>
+                            <button style={{width:'100%',height:180,fontSize:20,color:'#fff',border:'0.5px solid #D7D7D7',backgroundColor:(this.state.isEnabled ? '#1A81C8':'#C4C4C4')}}>确认<br />支付</button>
+                        </div>
+                    </div>
+                </div>
+            </div>;
+        }
+    });
+
+    var style = {
+        body:{
+            margin:0,
+            width:'100%',
+            height:'100%',
+            backgroundColor:'#E9F7FF'
+        },
+        top:{
+            display:'flex',
+            flexDirection:'column',
+            width:'100%',
+            marginTop:20,
+            alignItems: 'center',
+            div:{
+                justifyConten:'spaceBetween',
+                alignItems: 'center',
+                textAlign:'center',
+                display:'flex',
+                name: {
+                    fontSize: 20,
+                    margin: 0,
+                    height: "100%",
+                    marginTop: 10,
+                    marginLeft: 10
+
+                }
+            },
+            filed:{
+                height:50,
+                width:'calc(100% - 40px)',
+                backgroundColor:'#fff',
+                borderRadius:5,
+                border:'2px solid #5F97D7',
+                display:'flex',
+                flexDirection:'row',
+                marginTop:20,
+                pl:{
+                    margin: 10,
+                    height: 30,
+                    fontSize:15,
+                    lineHeight:"30px"
+
+                },
+                right:{
+                    display:'flex',
+                    width:'calc(100% - 120px)',
+                    margin: 10,
+                    height: 30,
+                    lineHeight:"30px",
+                    flexDirection:'row-reverse',
+                    justifyConten:'flex-end',
+                    p:{
+                        margin: 0,
+                        height: 30,
+                        fontSize:15,
+
+                    }
+                }
+
+            }
+
+        }
+        ,
+        image:{
+            width:40,
+            height:40,
+            margin:0
+        },
+        name:{
+            fontSize:20,
+            margin:0
+
+        },
+        bottom:{
+            position:'absolute',
+            bottom:0,
+            padding:0,
+            margin:0,
+
+            width:'100%',
+            display:'flex',
+            flexDirection:'column',
+            alignItems: 'center',
+            keyboard:{
+                margin:0,
+                width:'100%',
+                backgroundColor:'#fff',
+                display:'flex',
+                flexDirection:'row',
+                height:240,
+                button:{
+                    width:"33.333333%",
+                    height:60,
+                    fontSize:20,
+                    border:'0.5px solid #D7D7D7',
+                    display:'flex',
+                    textAlign:'middle',
+                    backgroundColor:'#fff'
+
+                },
+                left:{
+                    width:"75%",
+                    margin:0,
+                    padding:0,
+                    display:'flex',
+                    height:'100%',
+                    flexWrap:'wrap',
+                    justifyContent:"center"
+                },
+                right:{
+                    width:'25%'
+                }
+            },
+
+
+        }
+    };
+    ReactDOM.render(
+            <HelloMessage name="Runoob" />,
+        document.getElementById('pay')
+    );
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>易码收银</title>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+<body style="background-color:#1D93D3;margin: 0px;">
+<div id="example"></div>
+<script type="text/babel">
+    var QRCode = React.createClass({
+        getInitialState: function () {
+            return {image: "../src/1495374229.png"};
+        },
+        componentDidMount: function () {
+            var width = parseFloat($(".back").css('width'))
+            var qrwidth = 350.0 / 750.0 * width
+            var top = width/375.0*110
+            var right = (width - qrwidth)/2
+            $(".qr").css('width',qrwidth)
+            $(".qr").css('height',qrwidth)
+            $(".qr").css('top',top)
+            $(".qr").css('right',right)
+
+            console.log(qrwidth)
+        },
+        handleClick: function (event) {
+            this.setState({liked: !this.state.liked});
+        },
+        render: function () {
+            return (
+                    <div>
+                        <img className="back" src="../src/qrview.png" style={style.back}/>
+                        <img className="qr" src={this.state.image} style={style.qr}/>
+                    </div>
+
+            );
+        }
+    });
+    var style = {
+        back: {
+            width: '100%',
+            height: 'auto',
+            pointerEvents: 'none',
+            zIndex:'-1',
+            position:'absolute',
+            top:0,
+
+
+        },
+        qr:{
+            width:0,
+            height:0,
+            position:'absolute',
+            top:0,
+        }
+    }
+
+    ReactDOM.render(
+            <QRCode />,
+        document.getElementById('example')
+    );
+</script>
+</body>
+</html>
