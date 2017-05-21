@@ -37,15 +37,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrcode.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qrcode.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/qrcode.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="405">
               <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1495376215000" expanded="true" signature="1153:1192" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,6 +127,7 @@
         <option value="$PROJECT_DIR$/html/pay.html" />
         <option value="$PROJECT_DIR$/html/paycomplete.html" />
         <option value="$PROJECT_DIR$/html/qrcode.html" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -284,12 +295,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495343056188</updated>
       <workItem from="1495343057277" duration="22698000" />
-      <workItem from="1495368022275" duration="7733000" />
+      <workItem from="1495368022275" duration="8624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30431000" />
+    <option name="totallyTimeSpent" value="31322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="441" y="23" width="1654" height="976" extended-state="0" />
@@ -400,12 +411,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/qrcode.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="405">
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1495376215000" expanded="true" signature="1153:1192" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
