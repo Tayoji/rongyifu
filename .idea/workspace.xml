@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pay.html" afterPath="$PROJECT_DIR$/html/pay.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/paycomplete.html" afterPath="$PROJECT_DIR$/html/paycomplete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/qrcode.html" afterPath="$PROJECT_DIR$/html/qrcode.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,12 +26,19 @@
       <file leaf-file-name="pay.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/pay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="106" column="38" lean-forward="true" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/delete.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -51,8 +59,8 @@
       <file leaf-file-name="qrcode.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/qrcode.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="84" lean-forward="false" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
+            <state relative-caret-position="472">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -73,8 +81,8 @@
       <file leaf-file-name="paycomplete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/paycomplete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+            <state relative-caret-position="267">
+              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -91,13 +99,6 @@
       </file>
       <file leaf-file-name="ad.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ad.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="done.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/done.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -155,8 +156,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="28" />
+    <option name="x" value="133" />
+    <option name="y" value="85" />
     <option name="width" value="1440" />
     <option name="height" value="815" />
   </component>
@@ -176,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,6 +220,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,15 +335,17 @@
       <workItem from="1495419090522" duration="29000" />
       <workItem from="1495419124882" duration="4925000" />
       <workItem from="1495436011189" duration="1072000" />
-      <workItem from="1495437235826" duration="484000" />
+      <workItem from="1495437235826" duration="514000" />
+      <workItem from="1495438668529" duration="1656000" />
+      <workItem from="1495441152405" duration="4794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37832000" />
+    <option name="totallyTimeSpent" value="44312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="28" width="1440" height="815" extended-state="0" />
+    <frame x="133" y="85" width="1440" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -650,11 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/delete.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/timg.jpeg" />
     <entry file="file://$PROJECT_DIR$/src/done.png">
       <provider selected="true" editor-type-id="images">
@@ -699,18 +697,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/qrcode.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="84" lean-forward="false" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
+        <state relative-caret-position="472">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/delete.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/paycomplete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
+        <state relative-caret-position="267">
+          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -719,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/pay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="106" column="38" lean-forward="true" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
+        <state relative-caret-position="135">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

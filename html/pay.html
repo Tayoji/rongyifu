@@ -7,6 +7,8 @@
     <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
     <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type='application/javascript' src='../src/fastclick.js'></script>
+
     <meta name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <style>
@@ -14,7 +16,7 @@
 
     </style>
 </head>
-<body style="background-color: #E9F7FF;margin: 0px; ">
+<body style="background-color: #EAF8FF;margin: 0px; ">
 <div id="pay">
 
 </div>
@@ -22,11 +24,21 @@
 <script type="text/babel">
     var HelloMessage = React.createClass({
         getInitialState:function () {
-          return {isShow:true,money:"",name:"天天饭店",image:"../src/timg.png",isEnabled:false}
+          return {
+              isShow:true,
+              money:"", // 通过这个可以设置初始金额
+              name:"天天饭店",//
+              image:"../src/timg.png",
+              isEnabled:false
+          }
         },
         componentDidMount:function () {
             this.timerFire()
+            $(function() {
+                FastClick.attach(document.body);
+            });
         },
+
         timerFire:function () {
             if (this.timer){
             }else{
@@ -77,6 +89,7 @@
         ,
 
         handleClickNum:function (value) {
+//            $(".money").text(value)
             var money = this.state.money
 //            this.hideOrShowLine(false)
 //            clearInterval(this.timer)
@@ -108,7 +121,6 @@
             if (i > 0) {
                 money = money.substr(0,i+3)
             }
-
             this.setState({
                 money:money,
                 isEnabled:money != 0
@@ -135,17 +147,17 @@
                    <div style={style.top.filed} onClick={this.showKeyboard.bind(this)}>
                        <p style={style.top.filed.pl}>请输入金额</p>
                        <div style={style.top.filed.right}>
-                           <div className="line" style={{backgroundColor:'#1A81C8',width:2,marginTop:5,marginLeft:3,height:20}}></div>
-                           <p style={style.top.filed.right.p}>{this.state.money}</p>
+                           <div className="line" style={{backgroundColor:'#1E94D4',width:2,marginTop:5,marginLeft:3,height:20}}></div>
+                           <p className="money" style={style.top.filed.right.p}>{this.state.money}</p>
                            <p style={style.top.filed.right.p}>¥</p>
                        </div>
                    </div>
                </div>
 
                 <div className="keyboard" style={style.bottom}>
-                    <div style={{marginBottom:15}}>
+                    <div style={{marginBottom:6}}>
                         <a href="http://ryfapp.posp.wang">
-                            <img style={{width:"180px"}} src="../src/rongyifu.png" />
+                            <img style={{width:"150px"}} src="../src/rongyifu.png" />
                         </a>
 
                     </div>
@@ -156,7 +168,7 @@
                                 keys.map(function (value,index) {
                                     if (value.length > 1){
                                         return <button  style={style.bottom.keyboard.button}  onClick={self.handleClickHideKeyboard.bind(self)}>
-                                            <img style={{width:'30',margin:'auto'}} src={value}/>
+                                            <img style={{width:'22',margin:'auto'}} src={value}/>
                                         </button>
                                     }else{
                                         return <button style={style.bottom.keyboard.button} id={index} onClick={self.handleClickNum.bind(self,value)}><p style={{width:'100%',height:"100%",margin:0}}>{value}</p></button>
@@ -165,8 +177,8 @@
                             }
                         </div>
                         <div style={style.bottom.keyboard.right}>
-                            <button style={{fontFamily: "黑体",width:'100%',height:60,border:'0.5px solid #cccccc',backgroundColor:'#fff'}}  onClick={this.handleClickDelete.bind(this)}><img style={{width:'30'}} src="../src/delete.png"/></button>
-                            <button style={{fontFamily: "黑体",width:'100%',height:180,fontSize:18,color:'#fff',border:'0.5px solid #cccccc',backgroundColor:(this.state.isEnabled ? '#1A81C8':'#cccccc')}}>确认<br />支付</button>
+                            <button style={{fontFamily: "黑体",width:'100%',height:67,border:'0.5px solid #cccccc',backgroundColor:'#fff'}}  onClick={this.handleClickDelete.bind(this)}><img style={{width:'36',marginTop:"5px"}} src="../src/delete.png"/></button>
+                            <button style={{fontFamily: "黑体",width:'100%',height:201,fontSize:18,color:'#fff',border:'0.5px solid #cccccc',backgroundColor:(this.state.isEnabled ? '#1E94D4':'#cccccc')}}>确认<br />支付</button>
                         </div>
                     </div>
                 </div>
@@ -179,7 +191,7 @@
             margin:0,
             width:'100%',
             height:'100%',
-            backgroundColor:'#E9F7FF'
+            backgroundColor:'#EAF8FF'
         },
         top:{
             display:'flex',
@@ -205,26 +217,27 @@
                 }
             },
             filed:{
-                height:50,
+                height:60,
                 width:'calc(100% - 40px)',
                 backgroundColor:'#fff',
-                borderRadius:10,
-                border:'2px solid #5F97D7',
+                borderRadius:5,
+                border:'1px solid #5F97D7',
                 display:'flex',
                 flexDirection:'row',
                 marginTop:15,
                 pl:{
-                    margin: "10px 10px 10px 20px",
+                    margin: "15px 10px 15px 20px",
                     height: 30,
                     fontSize:17,
                     lineHeight:"30px",
-                    fontFamily: "黑体"
+                    fontFamily: "黑体",
+                    color:"#333333"
 
                 },
                 right:{
                     display:'flex',
                     width:'calc(100% - 150px)',
-                    margin: "10px 20px 10px 10px",
+                    margin: "15px 20px 15px 10px",
                     height: 30,
                     lineHeight:"30px",
                     flexDirection:'row-reverse',
@@ -233,7 +246,10 @@
                         margin: "0px 0px 0px 3px",
                         height: 30,
                         fontSize:17,
-                        fontFamily: "黑体"
+                        fontFamily: "黑体",
+                        color:"#333333"
+
+
 
                     }
                 }
@@ -251,7 +267,9 @@
         },
         name:{
             fontSize:20,
-            margin:0
+            margin:0,
+            color:"#333333"
+
 
         },
         bottom:{
@@ -270,20 +288,21 @@
                 backgroundColor:'#fff',
                 display:'flex',
                 flexDirection:'row',
-                height:240,
+                height:268,
                 button:{
-                    width:"33.333333%",
-                    height:60,
-                    fontSize:20,
-                    border:'0.3px solid #cccccc',
+                    width:"calc(33.333333333% - 0.001px)",
+                    height:67,
+                    fontSize:30,
+                    border:'0.5px solid #cccccc',
                     display:'flex',
                     textAlign:'middle',
                     backgroundColor:'#fff',
-                    fontFamily: "黑体"
+                    fontFamily: "黑体",
+                    color:'#535353'
 
                 },
                 left:{
-                    width:"75%",
+                    width:"72%",
                     margin:0,
                     padding:0,
                     display:'flex',
@@ -292,7 +311,7 @@
                     justifyContent:"center"
                 },
                 right:{
-                    width:'25%'
+                    width:'28%'
                 }
             },
 
