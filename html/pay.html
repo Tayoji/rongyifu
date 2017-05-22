@@ -10,7 +10,7 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <style>
-
+        *{font-family: "黑体"}
 
     </style>
 </head>
@@ -45,12 +45,16 @@
         handleClickHideKeyboard: function () {
             $(".keyboard").animate({
                 bottom:'-280px'
+            },"fast",function () {
+                $(".keyboard").hide()
             });
         },
         showKeyboard:function () {
-            $(".keyboard").animate({
-                bottom:'0px'
-            });
+            $(".keyboard").show(0,function () {
+                $(".keyboard").animate({
+                    bottom:'0px'
+                })
+            })
         },
         handleClickDelete:function (event) {
             var money = this.state.money
@@ -74,9 +78,9 @@
 
         handleClickNum:function (value) {
             var money = this.state.money
-            this.hideOrShowLine(false)
-            clearInterval(this.timer)
-            this.timer = null
+//            this.hideOrShowLine(false)
+//            clearInterval(this.timer)
+//            this.timer = null
             let index = money.indexOf(".")
             if  (index >= 0 && value == "."){
                 return
@@ -104,8 +108,7 @@
             if (i > 0) {
                 money = money.substr(0,i+3)
             }
-            console.log(i)
-            var isEnabled = false
+
             this.setState({
                 money:money,
                 isEnabled:money != 0
@@ -162,8 +165,8 @@
                             }
                         </div>
                         <div style={style.bottom.keyboard.right}>
-                            <button style={{width:'100%',height:60,border:'0.5px solid #cccccc',backgroundColor:'#fff'}}  onClick={this.handleClickDelete.bind(this)}><img style={{width:'30'}} src="../src/delete.png"/></button>
-                            <button style={{width:'100%',height:180,fontSize:18,color:'#fff',border:'0.5px solid #cccccc',backgroundColor:(this.state.isEnabled ? '#1A81C8':'#cccccc')}}>确认<br />支付</button>
+                            <button style={{fontFamily: "黑体",width:'100%',height:60,border:'0.5px solid #cccccc',backgroundColor:'#fff'}}  onClick={this.handleClickDelete.bind(this)}><img style={{width:'30'}} src="../src/delete.png"/></button>
+                            <button style={{fontFamily: "黑体",width:'100%',height:180,fontSize:18,color:'#fff',border:'0.5px solid #cccccc',backgroundColor:(this.state.isEnabled ? '#1A81C8':'#cccccc')}}>确认<br />支付</button>
                         </div>
                     </div>
                 </div>
@@ -196,6 +199,7 @@
                     marginTop: 0,
                     marginLeft: 11,
                     lineHeight:"22px",
+                    fontFamily: "黑体"
 
 
                 }
@@ -213,7 +217,8 @@
                     margin: "10px 10px 10px 20px",
                     height: 30,
                     fontSize:17,
-                    lineHeight:"30px"
+                    lineHeight:"30px",
+                    fontFamily: "黑体"
 
                 },
                 right:{
@@ -228,6 +233,7 @@
                         margin: "0px 0px 0px 3px",
                         height: 30,
                         fontSize:17,
+                        fontFamily: "黑体"
 
                     }
                 }
@@ -272,7 +278,8 @@
                     border:'0.3px solid #cccccc',
                     display:'flex',
                     textAlign:'middle',
-                    backgroundColor:'#fff'
+                    backgroundColor:'#fff',
+                    fontFamily: "黑体"
 
                 },
                 left:{
