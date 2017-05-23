@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfdf375d-96fc-4441-bb70-d9c86ff9aa7f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/qrcode.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pay.html" afterPath="$PROJECT_DIR$/html/pay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/paycomplete.html" afterPath="$PROJECT_DIR$/html/paycomplete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/qrcode.html" afterPath="$PROJECT_DIR$/html/qrcode.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +24,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pay.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pay.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/pay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -56,24 +57,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qrcode.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qrcode.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/qrcode.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="327">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1495524213000" expanded="true" signature="4554:4773" ph="..." />
+                <marker date="1495524213000" expanded="true" signature="4631:4644" ph="..." />
+                <marker date="1495524213000" expanded="true" signature="4705:4715" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="60">
+              <caret line="4" column="93483" lean-forward="false" selection-start-line="4" selection-start-column="93483" selection-end-line="4" selection-end-column="93483" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrcode.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/qrcode.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9195">
+              <caret line="613" column="5" lean-forward="false" selection-start-line="613" selection-start-column="5" selection-end-line="613" selection-end-column="5" />
+              <folding>
+                <marker date="1448390600000" expanded="true" signature="23005:23039" ph="..." />
+                <marker date="1448390600000" expanded="true" signature="23195:23393" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +98,8 @@
       <file leaf-file-name="paycomplete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/paycomplete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="1590">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -92,13 +109,6 @@
       </file>
       <file leaf-file-name="timg.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/timg.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ad.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -120,6 +130,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -140,9 +151,11 @@
       <list>
         <option value="$PROJECT_DIR$/html/test.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/html/qrcode.html" />
         <option value="$PROJECT_DIR$/html/paycomplete.html" />
         <option value="$PROJECT_DIR$/html/pay.html" />
+        <option value="$PROJECT_DIR$/src/qrcode.js" />
+        <option value="$PROJECT_DIR$/src/min.js" />
+        <option value="$PROJECT_DIR$/html/qrcode.html" />
       </list>
     </option>
   </component>
@@ -156,8 +169,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="133" />
-    <option name="y" value="85" />
+    <option name="x" value="205" />
+    <option name="y" value="230" />
     <option name="width" value="1440" />
     <option name="height" value="815" />
   </component>
@@ -177,6 +190,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,8 +234,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,15 +350,19 @@
       <workItem from="1495436011189" duration="1072000" />
       <workItem from="1495437235826" duration="514000" />
       <workItem from="1495438668529" duration="1656000" />
-      <workItem from="1495441152405" duration="4794000" />
+      <workItem from="1495441152405" duration="4971000" />
+      <workItem from="1495502669604" duration="1092000" />
+      <workItem from="1495504815167" duration="1145000" />
+      <workItem from="1495506422847" duration="2777000" />
+      <workItem from="1495512180044" duration="2518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44312000" />
+    <option name="totallyTimeSpent" value="52021000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="133" y="85" width="1440" height="815" extended-state="0" />
+    <frame x="205" y="230" width="1440" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -377,26 +394,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/1495374229.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/qrcode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="84" lean-forward="false" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -459,6 +460,9 @@
           <caret line="38" column="84" lean-forward="false" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1495524213000" expanded="true" signature="4554:4773" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4631:4644" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4705:4715" ph="..." />
           </folding>
         </state>
       </provider>
@@ -467,7 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -515,6 +518,9 @@
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1495524213000" expanded="true" signature="4554:4773" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4631:4644" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4705:4715" ph="..." />
           </folding>
         </state>
       </provider>
@@ -523,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -587,6 +592,9 @@
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1495524213000" expanded="true" signature="4554:4773" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4631:4644" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4705:4715" ph="..." />
           </folding>
         </state>
       </provider>
@@ -624,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,6 +656,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1495524213000" expanded="true" signature="4554:4773" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4631:4644" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4705:4715" ph="..." />
           </folding>
         </state>
       </provider>
@@ -668,21 +678,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1495374229.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="7" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rongyifu.png">
@@ -695,16 +696,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/qrcode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/delete.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -712,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/paycomplete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="1590">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -722,10 +713,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/pay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="660">
+          <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/qrcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9195">
+          <caret line="613" column="5" lean-forward="false" selection-start-line="613" selection-start-column="5" selection-end-line="613" selection-end-column="5" />
+          <folding>
+            <marker date="1448390600000" expanded="true" signature="23005:23039" ph="..." />
+            <marker date="1448390600000" expanded="true" signature="23195:23393" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="93483" lean-forward="false" selection-start-line="4" selection-start-column="93483" selection-end-line="4" selection-end-column="93483" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/qrcode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1495524213000" expanded="true" signature="4554:4773" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4631:4644" ph="..." />
+            <marker date="1495524213000" expanded="true" signature="4705:4715" ph="..." />
           </folding>
         </state>
       </provider>
